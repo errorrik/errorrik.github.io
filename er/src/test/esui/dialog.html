@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>[ESUI EXAMPLE] - Dialog</title>
+
+<link rel="stylesheet" href="page.css" type="text/css" />
+<link rel="stylesheet" href="../../src/esui/css/ui-dialog.css" type="text/css" />
+<link rel="stylesheet" href="../../src/esui/css/ui-button.css" type="text/css" />
+<link rel="stylesheet" href="../../src/esui/css/ui-mask.css" type="text/css" />
+<link rel="stylesheet" href="../../release/esui-2.1.2.css.css" type="text/css" />
+<script type="text/javascript" src="../../tool/tangram-1.3.9.js"></script>
+     <script type="text/javascript" src="../../release/esui-2.1.2.js"></script>
+
+
+</head>
+
+<body>
+<div class="header">[ESUI EXAMPLE] - Dialog</div>
+<div class="main">
+	<table cellpadding="5" cellspacing="0" border="0"><tr>
+	<td><div ui="type:Button;id:testDialog">dialog</div></td>
+	<td><div ui="type:Button;id:testDialog2">dialog has mask</div></td>
+	<td><div ui="type:Button;id:testDialog3">dialog has white mask</div></td>
+	<td><div ui="type:Button;id:testDialog4">dialog draggable</div></td>
+	<td><div ui="type:Button;id:testDialog5">dialog auto position</div></td>
+	<td><div ui="type:Button;id:testDialog6">manual dialog</div></td>
+    <td><div ui="type:Button;id:testDialog7">manual dialog2</div></td>
+	<td><div ui="type:Button;id:testDialog8">alert</div></td>
+	<td><div ui="type:Button;id:testDialog9">confirm</div></td>
+	</tr></table>
+	<br>长河落日圆
+<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆<br>长河落日圆
+
+</div>
+
+<div ui="type:Dialog;id:manualDialog;draggable:1;top:0;">
+    <div>manual dialog</div>
+    <div>
+        <h4>【质检总局：蒙牛等企业最新监测未发现黄曲霉毒素MI超标】</h4>
+        <p>国家质检总局发布液体乳专项监督检查情况，截至1月9日，各地质检机构开展的液体乳监测结果表明，蒙牛、长富、伊利、光明、三元、雀巢、完达山、君乐宝等企业生产的液体乳未新发现黄曲霉毒素M1超标问题。</p>
+    </div>
+</div>
+
+<div ui="type:Dialog;id:manualDialog2;draggable:1;top:40;">
+    <div>manual dialog</div>
+    <div>
+        <h4>【质检总局：蒙牛等企业最新监测未发现黄曲霉毒素MI超标】</h4>
+        <p>国家质检总局发布液体乳专项监督检查情况，截至1月9日，各地质检机构开展的液体乳监测结果表明，蒙牛、长富、伊利、光明、三元、雀巢、完达山、君乐宝等企业生产的液体乳未新发现黄曲霉毒素M1超标问题。</p>
+    </div>
+    <div><button ui="type:Button;id:closeMyDialog">关闭</button>
+</div>
+
+<script>
+esui.init();
+
+var myDialog = esui.util.create('Dialog', {
+	id		: 'myDialog',
+	title	: 'Title',
+	content	: 'Hello dialog!'
+});
+var maskDialog = esui.util.create('Dialog', {
+	id		: 'maskDialog',
+	title	: 'Title',
+	content	: 'Hello mask dialog!',
+	mask	: {level:0}
+});
+var whiteMaskDialog = esui.util.create('Dialog', {
+	id		: 'whiteMaskDialog',
+	title	: 'Title',
+	content	: 'Hello mask dialog!',
+	mask	: {level:0, type:'white'}
+});
+var draggableDialog = esui.util.create('Dialog', {
+	id		 : 'draggableDialog',
+	title	 : 'Title',
+	content	 : 'Hello draggable dialog!',
+	draggable: 1
+});
+
+var autoDialog = esui.util.create('Dialog', {
+	id		: 'autoDialog',
+	title	: 'Title',
+	content	: 'Hello auto position dialog!',
+	autoPosition: 1
+});
+
+esui.get('testDialog').onclick = function () {
+	myDialog.show();
+};
+
+esui.get('testDialog2').onclick = function () {
+	maskDialog.show();
+};
+
+esui.get('testDialog3').onclick = function () {
+	whiteMaskDialog.show();
+};
+
+esui.get('testDialog4').onclick = function () {
+	draggableDialog.show();
+};
+
+esui.get('testDialog5').onclick = function () {
+	autoDialog.show();
+};
+
+esui.get('testDialog6').onclick = function () {
+	esui.get('manualDialog').show();
+};
+
+esui.get('testDialog7').onclick = function () {
+	esui.get('manualDialog2').show();
+};
+
+esui.get('testDialog8').onclick = function () {
+	esui.Dialog.alert({
+		title: '通知',
+		content:'OK, 搞定!'
+	});
+};
+
+esui.get('testDialog9').onclick = function () {
+	esui.Dialog.confirm({
+		title: '你确定吗',
+		content:'我不确定你是不是要确定？',
+		oncancel: function () {
+			alert('你必须点确定');
+			return false;
+		}
+	});
+};
+</script>
+</body>
+</html>
+
+

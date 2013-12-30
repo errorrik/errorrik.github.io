@@ -1,0 +1,98 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>ESUI - Region</title><link rel="stylesheet" href="/doc.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="en" class="book" title="ESUI - Region"><div class="titlepage"><div><div><h1 class="title"><a name="idm465095979696"></a>ESUI - Region</h1></div></div><hr></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>1. <a href="#idm465095969744">&#26500;&#36896;&#22120;&#38745;&#24577;&#21442;&#25968;&#37197;&#32622;</a></dt><dt>2. <a href="#idm465095959808">&#21021;&#22987;&#21270;&#21442;&#25968;</a></dt><dt>3. <a href="#idm465095948528">&#20844;&#20849;&#23454;&#20363;&#26041;&#27861;</a></dt><dt>4. <a href="#idm465095933328">&#20107;&#20214;</a></dt></dl></div><div class="section" title="1. &#32487;&#25215;&#23618;&#32423;"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm465095973440"></a>1. &#32487;&#25215;&#23618;&#32423;</h2></div></div></div><p>Region - InputControl - Control</p></div><div class="section" title="2. &#35828;&#26126;"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm465095970176"></a>2. &#35828;&#26126;</h2></div></div></div><p>Region&#29992;&#20110;&#22320;&#22495;&#36873;&#25321;&#12290;</p><p>Region&#25903;&#25345;&#21333;&#36873;&#21644;&#22810;&#36873;&#20004;&#31181;&#36873;&#25321;&#27169;&#24335;&#12290;</p><p>&#22810;&#36873;&#27169;&#24335;&#19979;&#65292;value&#30340;&#23383;&#31526;&#20018;&#26684;&#24335;&#20026;&#36887;&#21495;&#20998;&#21106;&#30340;&#22320;&#22495;&#21015;&#34920;&#12290;</p><p>&#22320;&#22495;&#21015;&#34920;&#21487;&#36890;&#36807;&#38745;&#24577;&#21442;&#25968;&#37197;&#32622;&#65292;&#20063;&#21487;&#21021;&#22987;&#21270;&#26102;&#20256;&#20837;&#12290;&#22320;&#22495;&#21015;&#34920;&#26159;&#19968;&#20010;Array&#65292;&#21015;&#34920;&#20013;&#30340;&#27599;&#19968;&#39033;&#26159;&#19968;&#20010;&#21487;&#20855;&#26377;id&#12289;text&#12289;children&#23646;&#24615;&#30340;&#22810;&#37325;&#32467;&#26500;&#30340;&#25968;&#25454;&#12290;&#20855;&#20307;&#25968;&#25454;&#24418;&#24335;&#21442;&#29031;E-JSON&#26631;&#20934;&#20013;&#30340;&#25968;&#25454;&#22330;&#26223;&#65306;&#26641;&#12290;</p><pre class="programlisting">[
+    {
+        id: 'China',
+        text: '&#20013;&#22269;&#22320;&#21306;',
+        children: [
+            {
+                id: "North",
+                text: "&#21326;&#21271;&#22320;&#21306;",
+                children: [
+                    {id: "1", text: "&#21271;&#20140;"},
+                    {id: "3", text: "&#22825;&#27941;"},
+                    {id: "13", text: "&#27827;&#21271;"},
+                    {id: "26", text: "&#23665;&#35199;"},
+                    {id: "22", text: "&#20869;&#33945;&#21476;"}
+                ]
+            },
+            {
+                id: "NorthEast",
+                text: "&#19996;&#21271;&#22320;&#21306;",
+                children: [
+                    {id: "21", text: "&#36797;&#23425;"},
+                    {id: "18", text: "&#21513;&#26519;"},
+                    {id: "15", text: "&#40657;&#40857;&#27743;"}
+                ]
+            },
+            {
+                id: "East",
+                text: "&#21326;&#19996;&#22320;&#21306;",
+                children: [
+                    {id: "2", text: "&#19978;&#28023;"},
+                    {id: "19", text: "&#27743;&#33487;"},
+                    {id: "32", text: "&#27993;&#27743;"},
+                    {id: "9", text: "&#23433;&#24509;"},
+                    {id: "5", text: "&#31119;&#24314;"},
+                    {id: "20", text: "&#27743;&#35199;"},
+                    {id: "25", text: "&#23665;&#19996;"}
+                ]
+            },
+            {
+                id: "Middle",
+                text: "&#21326;&#20013;&#22320;&#21306;",
+                children: [
+                    {id: "14", text: "&#27827;&#21335;"},
+                    {id: "16", text: "&#28246;&#21271;"},
+                    {id: "17", text: "&#28246;&#21335;"}
+                ]
+            },
+            {
+                id: "South",
+                text: "&#21326;&#21335;&#22320;&#21306;",
+                children: [
+                    {id: "4", text: "&#24191;&#19996;"},
+                    {id: "8", text: "&#28023;&#21335;"},
+                    {id: "12", text: "&#24191;&#35199;"}
+                ]
+            },
+            {
+                id: "SouthWest",
+                text: "&#35199;&#21335;&#22320;&#21306;",
+                children: [
+                    {id: "33", text: "&#37325;&#24198;"},
+                    {id: "28", text: "&#22235;&#24029;"},
+                    {id: "10", text: "&#36149;&#24030;"},
+                    {id: "31", text: "&#20113;&#21335;"},
+                    {id: "29", text: "&#35199;&#34255;"}
+                ]
+            },
+            {
+                id: "NorthWest",
+                text: "&#35199;&#21271;&#22320;&#21306;",
+                children: [
+                    {id: "27", text: "&#38485;&#35199;"},
+                    {id: "11", text: "&#29976;&#32899;"},
+                    {id: "24", text: "&#38738;&#28023;"},
+                    {id: "23", text: "&#23425;&#22799;"},
+                    {id: "30", text: "&#26032;&#30086;"}
+                ]
+            },
+            {
+                id: "Other",
+                text: "&#20854;&#20182;&#22320;&#21306;",
+                children: [
+                    {id: "34", text: "&#39321;&#28207;"},
+                    {id: "36", text: "&#28595;&#38376;"},
+                    {id: "35", text: "&#21488;&#28286;"}
+                ]
+            }
+        ]
+    },
+    {
+        id: 'Abroad',
+        text: '&#22269;&#22806;',
+        children: [
+            {id: '7', text: '&#26085;&#26412;'},
+            {id: '37', text: '&#20854;&#20182;&#22269;&#23478;'}
+        ]
+    }
+]</pre></div><div class="section" title="3. &#26500;&#36896;&#22120;&#38745;&#24577;&#21442;&#25968;&#37197;&#32622;"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm465095985568"></a>3. &#26500;&#36896;&#22120;&#38745;&#24577;&#21442;&#25968;&#37197;&#32622;</h2></div></div></div><div class="table"><a name="idm465095969744"></a><p class="title"><b>Table 1. &#26500;&#36896;&#22120;&#38745;&#24577;&#21442;&#25968;&#37197;&#32622;</b></p><div class="table-contents"><table summary="&#26500;&#36896;&#22120;&#38745;&#24577;&#21442;&#25968;&#37197;&#32622;" border="1"><colgroup><col><col></colgroup><thead><tr><th align="left">&#21517;&#31216;</th><th align="left">&#25551;&#36848;</th></tr></thead><tbody><tr><td align="left">{Array} REGION_LIST</td><td align="left">&#22320;&#22495;&#21015;&#34920;&#12290;</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section" title="4. &#21021;&#22987;&#21270;&#21442;&#25968;"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm465095981168"></a>4. &#21021;&#22987;&#21270;&#21442;&#25968;</h2></div></div></div><div class="table"><a name="idm465095959808"></a><p class="title"><b>Table 2. &#21021;&#22987;&#21270;&#21442;&#25968;</b></p><div class="table-contents"><table summary="&#21021;&#22987;&#21270;&#21442;&#25968;" border="1"><colgroup><col><col></colgroup><thead><tr><th align="left">&#21517;&#31216;</th><th align="left">&#25551;&#36848;</th></tr></thead><tbody><tr><td align="left">{Array} datasource</td><td align="left">&#22320;&#22495;&#21015;&#34920;&#12290;</td></tr><tr><td align="left">{boolean} disabled</td><td align="left">&#25511;&#20214;&#30340;&#19981;&#21487;&#29992;&#29366;&#24577;&#12290;</td></tr><tr><td align="left">{HTMLElement} main</td><td align="left">&#25511;&#20214;&#20027;&#20803;&#32032;&#12290;</td></tr><tr><td align="left">{string} mode</td><td align="left">&#36873;&#25321;&#27169;&#24335;&#12290;multi|single&#12290;</td></tr><tr><td align="left">{string|Object} rule</td><td align="left">&#39564;&#35777;&#35268;&#21017;&#12290;</td></tr><tr><td align="left">{string} value</td><td align="left">&#24403;&#21069;&#36873;&#20013;&#30340;&#22320;&#22495;value&#12290;</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section" title="5. &#20844;&#20849;&#23454;&#20363;&#26041;&#27861;"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm465095949168"></a>5. &#20844;&#20849;&#23454;&#20363;&#26041;&#27861;</h2></div></div></div><div class="table"><a name="idm465095948528"></a><p class="title"><b>Table 3. &#20844;&#20849;&#23454;&#20363;&#26041;&#27861;</b></p><div class="table-contents"><table summary="&#20844;&#20849;&#23454;&#20363;&#26041;&#27861;" border="1"><colgroup><col><col></colgroup><thead><tr><th align="left">&#21517;&#31216;</th><th align="left">&#25551;&#36848;</th></tr></thead><tbody><tr><td align="left">{void} appendTo( {HTMLElement} wrap )</td><td align="left">&#23558;&#25511;&#20214;&#28155;&#21152;&#21040;&#39029;&#38754;&#30340;&#26576;&#20010;&#20803;&#32032;&#20013;&#12290;</td></tr><tr><td align="left">{boolean} checkValidity( {void} )</td><td align="left">&#39564;&#35777;&#25511;&#20214;&#65292;&#20165;&#36820;&#22238;true/false&#12290;</td></tr><tr><td align="left">{void} disable( {void} )</td><td align="left">&#35774;&#32622;&#25511;&#20214;&#29366;&#24577;&#20026;&#31105;&#29992;&#12290;</td></tr><tr><td align="left">{void} enable( {void} )</td><td align="left">&#35774;&#32622;&#25511;&#20214;&#29366;&#24577;&#20026;&#21551;&#29992;&#12290;</td></tr><tr><td align="left">{string} getValue( {void} )</td><td align="left">&#33719;&#21462;&#36873;&#20013;&#30340;&#22320;&#22495;&#12290;</td></tr><tr><td align="left">{boolean} isDisabled( {void} )</td><td align="left">&#33719;&#21462;&#25511;&#20214;&#21487;&#29992;&#29366;&#24577;&#12290;</td></tr><tr><td align="left">{void} render( {void} )</td><td align="left">&#32472;&#21046;&#25511;&#20214;&#12290;</td></tr><tr><td align="left">{boolean} validate( {void} )</td><td align="left">&#39564;&#35777;&#25511;&#20214;&#65292;&#24403;&#20540;&#19981;&#21512;&#27861;&#26102;&#26174;&#31034;&#38169;&#35823;&#20449;&#24687;&#12290;</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section" title="6. &#20107;&#20214;"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="idm465095933968"></a>6. &#20107;&#20214;</h2></div></div></div><div class="table"><a name="idm465095933328"></a><p class="title"><b>Table 4. &#20107;&#20214;</b></p><div class="table-contents"><table summary="&#20107;&#20214;" border="1"><colgroup><col><col></colgroup><thead><tr><th align="left">&#21517;&#31216;</th><th align="left">&#25551;&#36848;</th></tr></thead><tbody><tr><td align="left">{boolean} onchange: ( {string} value )</td><td align="left">&#24403;&#36873;&#20013;&#22320;&#22495;&#21457;&#29983;&#25913;&#21464;&#26102;&#35302;&#21457;&#12290;</td></tr><tr><td align="left">{void} onbeforevalidate( {validator.Validity} )</td><td align="left">&#39564;&#35777;&#24320;&#22987;&#21069;&#35302;&#21457;&#12290;</td></tr><tr><td align="left">{void} onaftervalidate( {validator.Validity} )</td><td align="left">&#39564;&#35777;&#32467;&#26463;&#21518;&#35302;&#21457;&#12290;</td></tr><tr><td align="left">{void} oninvalid( {validator.Validity} )</td><td align="left">&#39564;&#35777;&#25511;&#20214;&#20540;&#19981;&#21512;&#27861;&#26102;&#35302;&#21457;&#12290;</td></tr></tbody></table></div></div><br class="table-break"></div></div></body></html>

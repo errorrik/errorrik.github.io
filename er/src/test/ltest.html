@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>ER(Enterprise RIA) 测试用例</title>
+
+	<script type="text/javascript" src="../tool/tangram-1.3.9.js"></script>
+     <script type="text/javascript" src="../release/er-2.1.2.js"></script>
+     <script type="text/javascript" src="../release/esui-2.1.2.js"></script>
+</head>
+<body>
+<div>
+<a href="#/">a</a>
+<a href="#/b">b</a>
+<a href="#/c">c</a>
+<div id="Main"></div>
+<script>
+var test = new er.Module( {
+    config: {
+        action: [
+            {
+                path: '/',
+                action: 'test.a'
+            },{
+                path: '/c',
+                action: 'test.c'
+            },{
+                path: '/b',
+                action: 'test.b'
+            }
+        ]
+    }
+} );
+
+test.a = new er.Action( {
+    view: 'tplA',
+
+    onfuck: function () {
+        debugger
+        this.reload()
+    }
+} );
+test.b = new er.Action( {
+    view: 'tplB'
+} );
+
+test.c = new er.Action( {
+    view: 'tplC'
+} );
+
+er.template.parse('<!--target:tplA-->page a<!--target:tplB-->page b<!--target:tplC-->page c');
+</script>
+
+
+<script>window.onload = function (){console.log(er.controller);er.init();}</script>
+</body>
+</html>

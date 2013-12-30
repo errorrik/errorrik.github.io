@@ -1,8 +1,8 @@
 #/bin/sh
 
-VER="2.1.0"
-ER_PATH="/home/ec2-user/er"
-DOCTOOL_PATH="/home/ec2-user/docbook-xsl-1.76.1/html/docbook.xsl"
+VER="2.1.2"
+ER_PATH="/Users/cire/workspace/github/ER"
+DOCTOOL_PATH="/Users/cire/local/docbook-xsl-1.75.2/html/docbook.xsl"
 PUB_PATH=$(dirname "$0")
 
 if [ ! -d "${PUB_PATH}/release" ]
